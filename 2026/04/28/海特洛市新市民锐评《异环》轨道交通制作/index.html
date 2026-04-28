@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"bruxyjjdx.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前言：虽然从公测第一天起，《异环》就因为频发的bug、糟糕的优化、不知所云的剧情和平庸的角色设计遭到了新玩家们的一致吐槽，但作为一名交通&amp;城建爱好者，本人还是被《异环》在一众烂大街的开放世界二游中相对创新的都市休闲玩法吸引住了。在体验了游戏中海特洛市的轨道交通系统后，我想分享一下自己对这款二游地图设计的看法。 总览 海特洛市轨道交通统一由“城际快线”运营，共5条线路，分别为环海线、水菱线、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="海特洛市新市民锐评《异环》轨道交通制作">
+<meta property="og:url" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/index.html">
+<meta property="og:site_name" content="卷卷大象的博客">
+<meta property="og:description" content="前言：虽然从公测第一天起，《异环》就因为频发的bug、糟糕的优化、不知所云的剧情和平庸的角色设计遭到了新玩家们的一致吐槽，但作为一名交通&amp;城建爱好者，本人还是被《异环》在一众烂大街的开放世界二游中相对创新的都市休闲玩法吸引住了。在体验了游戏中海特洛市的轨道交通系统后，我想分享一下自己对这款二游地图设计的看法。 总览 海特洛市轨道交通统一由“城际快线”运营，共5条线路，分别为环海线、水菱线、">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/map.png">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/hhx.png">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/slx.png">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/sqx.png">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/hxx.png">
+<meta property="og:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/qxx.png">
+<meta property="article:published_time" content="2026-04-28T02:35:11.000Z">
+<meta property="article:modified_time" content="2026-04-28T09:47:02.127Z">
+<meta property="article:author" content="卷卷大象">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/map.png">
+
+
+<link rel="canonical" href="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/","path":"2026/04/28/海特洛市新市民锐评《异环》轨道交通制作/","title":"海特洛市新市民锐评《异环》轨道交通制作"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>海特洛市新市民锐评《异环》轨道交通制作 | 卷卷大象的博客</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">卷卷大象的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Bruxyjjdx's blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-主页"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>主页</a></li><li class="menu-item menu-item-归档"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-关于"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-分类"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E8%A7%88"><span class="nav-number">1.</span> <span class="nav-text">总览</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%8E%AF%E6%B5%B7%E7%BA%BF-Costal-Highway-Line"><span class="nav-number">1.1.</span> <span class="nav-text">1.环海线 Costal Highway Line</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%B0%B4%E8%8F%B1%E7%BA%BF-Caltrop-Line"><span class="nav-number">1.2.</span> <span class="nav-text">2.水菱线 Caltrop Line</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%B8%8A%E6%99%B4%E7%BA%BF-Skytower-Line"><span class="nav-number">1.3.</span> <span class="nav-text">3.上晴线 Skytower Line</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%8E%AF%E6%96%B0%E7%BA%BF-New-Herland-Line"><span class="nav-number">1.4.</span> <span class="nav-text">4.环新线 New Herland Line</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%A1%A5%E6%96%B0%E7%BA%BF-Bridge-Crossings-Line"><span class="nav-number">1.5.</span> <span class="nav-text">5.桥新线 Bridge Crossings Line</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%90%E6%A7%BD"><span class="nav-number">2.</span> <span class="nav-text">吐槽</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%BD%91%E8%A7%84%E5%88%92"><span class="nav-number">2.1.</span> <span class="nav-text">线网规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E8%B7%AF%E8%AE%BE%E6%96%BD"><span class="nav-number">2.2.</span> <span class="nav-text">线路设施</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="卷卷大象"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">卷卷大象</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Bruxyjjdx" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Bruxyjjdx" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:bruxyjjdx@gmail.com" title="E-Mail → mailto:bruxyjjdx@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/318173029?spm_id_from=333.1007.0.0" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;318173029?spm_id_from&#x3D;333.1007.0.0" rel="noopener me" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/juan-juan-da-xiang" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;juan-juan-da-xiang" rel="noopener me" target="_blank"><i class="fab fa-zhihu fa-fw"></i>Zhihu</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.xiaohongshu.com/user/profile/615b2fe600000000020184e5" title="Rednote → https:&#x2F;&#x2F;www.xiaohongshu.com&#x2F;user&#x2F;profile&#x2F;615b2fe600000000020184e5" rel="noopener me" target="_blank"><i class="/images/rednote.png fa-fw"></i>Rednote</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://bruxyjjdx.github.io/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="卷卷大象">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="卷卷大象的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="海特洛市新市民锐评《异环》轨道交通制作 | 卷卷大象的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          海特洛市新市民锐评《异环》轨道交通制作
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-04-28 10:35:11 / 修改时间：17:47:02" itemprop="dateCreated datePublished" datetime="2026-04-28T10:35:11+08:00">2026-04-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%BA%A4%E9%80%9A/" itemprop="url" rel="index"><span itemprop="name">交通</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><em>前言：虽然从公测第一天起，《异环》就因为频发的bug、糟糕的优化、不知所云的剧情和平庸的角色设计遭到了新玩家们的一致吐槽，但作为一名交通&amp;城建爱好者，本人还是被《异环》在一众烂大街的开放世界二游中相对创新的都市休闲玩法吸引住了。在体验了游戏中海特洛市的轨道交通系统后，我想分享一下自己对这款二游地图设计的看法。</em></p>
+<h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h1><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/map.png" class="" title="海特洛市轨道交通线路图">
+<p>海特洛市轨道交通统一由“城际快线”运营，共5条线路，分别为<strong>环海线</strong>、<strong>水菱线</strong>、<strong>上晴线</strong>、<strong>环新线</strong>和<strong>桥新线</strong>。除桥新线外，其余四条线路均为环线。</p>
+<h2 id="1-环海线-Costal-Highway-Line"><a href="#1-环海线-Costal-Highway-Line" class="headerlink" title="1.环海线 Costal Highway Line"></a>1.环海线 Costal Highway Line</h2><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/hhx.png" class="" title="环海线列车">
+<p><strong>环海线</strong>环绕海特洛市城西<strong>桥间地</strong>、<strong>未闻浦</strong>和<strong>绘空町</strong>三区运行，共设<strong>半角街</strong>、<strong>湛望角</strong>和<strong>绘空町</strong>3座车站。<br>半角街站附近区间与沿海公路并行，类似神奈川県的<em>江ノ島電鉄</em>；湛望角站附近区间位于海上，显然是致敬了动画电影《千与千寻》中的水上电车（原型为<em>名古屋鉄道</em>1959年受台风袭击被洪水淹没的区间）。</p>
+<h2 id="2-水菱线-Caltrop-Line"><a href="#2-水菱线-Caltrop-Line" class="headerlink" title="2.水菱线 Caltrop Line"></a>2.水菱线 Caltrop Line</h2><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/slx.png" class="" title="水菱线列车">
+<p><strong>水菱线</strong>位于米格尔区北部郊区，得名于线路环绕运行的水菱湖，共设<strong>水菱湖</strong>、<strong>摇曳</strong>和<strong>北角</strong>3站，其中水菱湖站可同站换乘上晴线。<br>这条线路的功能应该是服务北部摇曳镇和北角镇居民以及水菱湖的旅游观光事业，毕竟根据游戏中NPC的对话内容，水菱湖应该算是海特洛市的知名景区（？）。</p>
+<h2 id="3-上晴线-Skytower-Line"><a href="#3-上晴线-Skytower-Line" class="headerlink" title="3.上晴线 Skytower Line"></a>3.上晴线 Skytower Line</h2><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/sqx.png" class="" title="上晴线列车">
+<p><strong>上晴线</strong>，从英文名就能看出，得名于地标建筑上晴塔（类似<em>東武スカイツリーライン</em>的命名方式）。共设<strong>伊亚北</strong>、<strong>柴郡猫</strong>和<strong>水菱湖</strong>3站，水菱湖站可同站换乘水菱线，伊亚北站可出站换乘环新线。</p>
+<h2 id="4-环新线-New-Herland-Line"><a href="#4-环新线-New-Herland-Line" class="headerlink" title="4.环新线 New Herland Line"></a>4.环新线 New Herland Line</h2><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/hxx.png" class="" title="环新线列车">
+<p><strong>环新线</strong>，顾名思义就是新赫兰德区的环线，是地图中最长的线路，共设<strong>伊亚北</strong>、<strong>胡诺</strong>、<strong>胡林</strong>3站，伊亚北站可出站换乘上晴线。</p>
+<h2 id="5-桥新线-Bridge-Crossings-Line"><a href="#5-桥新线-Bridge-Crossings-Line" class="headerlink" title="5.桥新线 Bridge Crossings Line"></a>5.桥新线 Bridge Crossings Line</h2><img src="/2026/04/28/%E6%B5%B7%E7%89%B9%E6%B4%9B%E5%B8%82%E6%96%B0%E5%B8%82%E6%B0%91%E9%94%90%E8%AF%84%E3%80%8A%E5%BC%82%E7%8E%AF%E3%80%8B%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E5%88%B6%E4%BD%9C/qxx.png" class="" title="桥新线列车">
+<p><strong>桥新线</strong>是连接海特洛市城西桥间地与城东新赫兰德区的线路，也是目前线网中唯一一条非环线。全线仅有桥间地的<strong>水梨子</strong>和新赫兰德区的<strong>卡美洛</strong>两站，两座车站均为2台1线尽头式车站。</p>
+<h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><h2 id="线网规划"><a href="#线网规划" class="headerlink" title="线网规划"></a>线网规划</h2><p>这是整个轨交系统中最显而易见的槽点，总共就五条线路有四条是环线，特别城东，从南到北是是三个平行的环线系统，这意味着从最北端的北角镇出发，要换乘两次经过三条环线才能到达新赫兰德区的最南端，若是有一条贯穿南北的线路，这当中就能省下很多路程和时间。<br>更为奇葩的是，作为唯一一条不是环线且能唯一沟通城市东西的线路，桥新线居然和另外四条线路<strong>都不能换乘</strong>，而且仅有的水梨子、卡美洛两站还都是尽头式车站，没有预留任何改造空间，也断绝了未来延长与其他线路换乘的可能；线网里五条线路，正儿八经的换乘站只有水菱湖站一个，伊亚南&#x2F;北站虽然名义上是出站换乘但两站之间有通道连接且都没有设付费区，勉强能算半个换乘站。几条线路名义上都属“城际快线”管理，实际上却是相互独立割裂的几个系统。<br>此外还有设站上的问题，尤其是环新线，线路极长却仅设三站，胡诺站-胡林站区间沿新赫兰德区南海岸有大段与公路并行，却没有一处设站，实在是对线路资源的浪费。<br>此外，制作组似乎也没有搞清楚不同等级的轨交系统之间的关系。海特洛市的轨交运营商叫“城际快线”，暗示未来地图范围扩大后还会有连接不同城市之间的线路，但在目前的地图中并没有发现类似城际铁路设施的预留，令人失望。</p>
+<h2 id="线路设施"><a href="#线路设施" class="headerlink" title="线路设施"></a>线路设施</h2><p>这同样是能看出制作组没有用心在做轨交系统的重要依据——我觉得制作组可能是没搞清中文语境的“电车”和日文语境的“電車”之间的区别，在设计这样一座日系风格的都市时，觉得要有像日本那样四通八达的<strong>通勤电车</strong>，于是就按中文里的理解搞出了游戏里的<strong>路面电车</strong>或者说轻轨。其他细节上更是可以用<strong>粗制滥造</strong>来形容：全部线路都是单线，站内也没有待避线，目前观察下来只有水菱线、上晴线有一辆以上的列车，至于可怜桥新线就只能一辆车拉风箱运行，这导致每条线路的运行密度都奇低，等车四五分钟（现实时间）都是常态；接触网的设置似乎是看制作组心情，一条线路有些地方电气化有些又是非电气化，莫非路上跑的这节小车还是电力内燃混动？每个车站的设计也及其简陋，只有水菱湖站和桥新线的两座车站设有摆设一般的检票机，其他车站都是站台直接贴着路边，也不知道在海特洛坐车到底花不花钱。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>如果代入一个海特洛市普通市民的视角，那么由于过于离谱的线路规划、设站和发车间隔，这个城市的轨道交通系统基本可以告别通勤功能，所剩的一点价值可能是几条线路沿线的风景还不错，当作观光列车来看的话乘坐体验还算凑合。<br>而如果带入一个游戏玩家的视角，那么从轨交系统设计这个小小的切面，就可以看出《异环》制作组的不成熟。我比较认可一位B站up主的观点，其他开放世界二游借鉴传统单机RPG，《异环》则是借鉴其他开放世界二游，《原神》、《鸣潮》里有的《异环》里也要有，至于这些机制设计为什么会被采用、为什么能激发玩家的兴趣，其实制作组自己也不一定有搞明白。同样，制作组觉得日本的城市里有电车，所以自己的“日系都市”里也要有类似的东西，但又没有认真地去做研究就硬生生地照搬进游戏里，最后做出了这一坨槽点满满的东西。我认为这都不是所谓“制作组里没有铁道迷”之类的问题，其实哪怕制作组稍微参考一下公司楼下上海、苏州的地铁系统，也不至于做成现在这个样子。<br>总而言之，我对游戏中的轨交系统和对这个都市题材开放世界游戏的评价是一致的，那就是有创新，但算不上令人满意，在细节上甚至可以说是敷衍。不过能看到有公司做这方面题材的题材的游戏，还是很令人欣喜的，希望《异环》制作组在公测期间能多听取网络上玩家的意见，把游戏做得越来越好吧。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/04/24/markdown%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95/" rel="prev" title="markdown简单语法">
+                  <i class="fa fa-angle-left"></i> markdown简单语法
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2026.4.24 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">卷卷大象</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
