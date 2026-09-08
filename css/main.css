@@ -1385,7 +1385,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #017df2;
+    background: #47baf0;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2903,4 +2903,19 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+/* 全局文章排版：加粗变黄、标题下半高亮（黄色 #FFE135） */
+/* 加粗内容：文字本身变黄 */
+.post-body strong,
+.post-body b {
+  color: #ffe135;
+}
+/* 正文各级标题：文字下半部分铺黄色高亮带 */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  background-image: linear-gradient(transparent 50%, #ffe135 50%);
 }
