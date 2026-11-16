@@ -59,16 +59,15 @@
       
 <section class="cover">
   
-    <a class="forkMe" href="https://github.com/Bruxyjjdx" target="_blank">
-      <img width="149" height="149" src="/images/forkme.png"
-        class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
-    </a>
-  
 
   <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover.jpg" alt="image frame" />
+    <div class="bg-box has-mobile-cover">
+      <img class="cover-img cover-img-desktop" src="/images/cover.jpg" alt="image frame" />
+      
+      <img class="cover-img cover-img-mobile" src="/images/cover-mobile.jpg" alt="image frame" />
+      
     </div>
+    <div class="cover-mask" style="--cover-mask-color: rgba(0, 0, 0, 0.28)"></div>
     <div class="cover-inner text-center text-white">
       <a href="/"><h1>知秋阁</h1></a>
       <div id="subtitle-box">
@@ -91,18 +90,38 @@
 
   <script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
   <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['大音希聲，大象無形', '', ''],
-        startDelay: 1200,
-        typeSpeed: 400,
-        loop: true,
-        backSpeed: 0,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
+    (function () {
+      // 只取有内容的行；空行不再参与轮播
+      var lines = ["大音希聲，大象無形", "", ""]
+        .filter(function (s) { return String(s).trim() !== ''; });
+      var target = document.getElementById('subtitle');
+      if (!target || !lines.length) return;
+
+      // CDN 被拦截/加载失败时退化为静态文字，保证封面上仍有内容
+      if (typeof Typed === 'undefined') {
+        target.textContent = lines[0];
+        return;
+      }
+
+      try {
+        var typed = new Typed('#subtitle', {
+          strings: lines,
+          startDelay: 1200,
+          typeSpeed: 400,
+          loop: false,
+          backSpeed: 60,
+          showCursor: true,
+          onComplete: function () {
+            // 打完后把闪烁光标收掉，看起来是一行静态文字
+            var cursor = target.querySelector('.typed-cursor');
+            if (cursor) cursor.style.display = 'none';
+          }
+        });
+      } catch (err) {
+        target.textContent = lines[0];
+        console.log(err);
+      }
+    })();
   </script>
 
 
